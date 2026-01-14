@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Magra:wght@100;200;300;400;500;600;700&display=swap');
+
+
+:root {
+  --bg-color: #f5f7fa;
+  --box-bg-color: #ffffff;
+  --text-color: #1f2937;
+  --title-color: #111827;
+  --border-color: #e5e7eb;
+}
+
+:root.dark {
+  --bg-color: #0f172a;
+  --box-bg-color: #1e293b;
+  --text-color: #e5e7eb;
+  --title-color: #ffffff;
+  --border-color: #334155;
+}
+
+body {
+  font-family: 'Magra', sans-serif;
+  background-color: var(--bg-color);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    max-width: 1340px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.img-card:hover{
+    transform: scale(1.05);
+
+}
+
+.navbar {
+  background: var(--box-bg-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 12px 20px;
+}
+nav{
+    position: sticky;
+    top: 0;
+    background-color: var(--box-bg-color);
+}
+.nav-container {
+    width: 100%;
+    max-width: 1340px;
+    padding: 20px;
+    margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.theme-btn {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.nav-container h2{
+    color: var(--text-color);
+}
+
+
+main{
+    background-color: var(--bg-color);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.post-card{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: var(--box-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid var(--border-color);
+}
+.img-card{
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.post-card h2{
+    color: var(--title-color);
+}
+.post-card h3{
+    color: var(--text-color);
+    font-weight: 400;
+}
+.post-card p{
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+footer{
+    background-color: var(--box-bg-color);
+}
+
+.Footer-container{
+     width: 100%;
+    max-width: 1340px;
+    padding: 20px;
+    margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Footer-container a{
+   text-decoration: none;
+   font-size: 25px;
+   color: var(--title-color);
+}
+
+.fa-github{
+    color: var(--title-color);
+}
