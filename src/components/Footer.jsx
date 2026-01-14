@@ -2,13 +2,13 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer>
+    <section>
       <div className='Footer-container '>
         <a href="https://github.com/hafizullohkomilov013-cyber">
-          Komilov Hafizillo <i class="fa-brands fa-github"></i>
+          Komilov Hafizillo <i className="fa-brands fa-github"></i>
         </a>
       </div>
-    </footer>
+    </section>
   );
 }
 

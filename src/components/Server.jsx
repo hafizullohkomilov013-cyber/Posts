@@ -11,6 +11,8 @@ function Server() {
     async function getPosts() {
       try {
         let res = await fetch("https://jsonplaceholder.typicode.com/comments");
+        console.log(res);
+        
         if(!res.ok){
           throw new Error('Xatoli')
         }
@@ -26,7 +28,7 @@ function Server() {
 
   
   return (
-    <main>
+    <section>
 
         <div className="container">
           {post.slice(0, 8).map((item) => {
@@ -44,7 +46,7 @@ function Server() {
             );
           })}
         </div>
-    </main>
+    </section>
   )
 }
 
