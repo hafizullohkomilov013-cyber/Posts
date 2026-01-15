@@ -8,7 +8,7 @@ function Navbar() {
     let [darkMode, setDarkMode] = useState(false)
 
     useEffect(() => {
-        document.documentElement.classList.toggle("dark", darkMode)    
+        document.documentElement.classList.toggle("dark-mode", darkMode)    
     })
 
   return (

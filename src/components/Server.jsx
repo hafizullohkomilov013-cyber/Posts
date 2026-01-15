@@ -10,8 +10,7 @@ function Server() {
   useEffect(() => {
     async function getPosts() {
       try {
-        let res = await fetch("https://jsonplaceholder.typicode.com/comments");
-        console.log(res);
+        let res = await fetch("https://jsonplaceholder.typicode.com/  ");
         
         if(!res.ok){
           throw new Error('Xatoli')
@@ -20,7 +19,6 @@ function Server() {
         setPost(data)
 
       } catch (error) {
-        
       }
     }
     getPosts()
@@ -29,7 +27,6 @@ function Server() {
   
   return (
     <section>
-
         <div className="container">
           {post.slice(0, 8).map((item) => {
             return (
